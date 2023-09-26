@@ -1,0 +1,305 @@
+* {
+  --cinza-color: #383e42;
+  --grey-color: #979287;
+  --green-color: #299c44;
+  --font-color-letters: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+h3,
+p {
+  color: white;
+}
+.codo-a-codo {
+  height: 4em;
+}
+.my-bg-grey {
+  background-color: var(--cinza-color);
+}
+.my-img1 {
+  filter: brightness(50%);
+  width: 100%;
+  margin-top: 5em;
+}
+.adjust-steve-lg{
+  height: 22.125em;
+}
+.carousel-cell{
+  margin: auto;
+}
+/*-------------*/
+
+.my-text-align-right {
+  text-align: right;
+}
+
+.my-links-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3em;
+}
+
+@media screen and (max-width:400px){
+  body{
+    font-size: 0.7em;
+  }
+  h3{
+    font-size: inherit;
+  }
+  .my-text1 {
+    height: 18em;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    margin-right: 2em;
+  }
+  .carousel-cell{
+    width: 60%;
+  }
+  .oradores-lg{
+    display: none;
+  }
+  .oradores-sm{
+    display: block;
+  }
+  footer{
+    background-color: #1e4f6d;
+  }
+  footer ul li{
+    list-style-type: none;
+  }
+  footer ul[class*="text-center"] li a{
+    text-decoration: none;
+  }
+}
+
+/* sm >= 576*/
+@media screen and (min-width:401px) and (max-width:576px){
+  body{
+    font-size: 0.7em;
+  }
+
+  .my-text1 {
+    height: 18em;
+    position: absolute;
+    top: 37%;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    margin-right: 2em;
+  }
+  .oradores-lg,
+  #oradores-lg{
+    display: none;
+  }
+
+  .carousel-cell{
+    width: 60%;
+    margin: auto;
+  }
+
+  footer{
+    background-color: #1e4f6d;
+  }
+  footer ul li{
+    list-style-type: none;
+  }
+  footer ul[class*="text-center"] li a{
+    text-decoration: none;
+  }
+}
+
+
+/* md >= 768 */
+@media screen and (min-width:577px) and (max-width: 768px) {
+  
+  body {
+    font-size: 0.7em;
+    height: 100vh;
+  }
+  .my-text1 {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    margin-right: 2em;
+  }
+  /*Nav Section*/
+  .nav-cel{
+    height: 5em;
+  }
+  h3{
+    padding: 0.5em 0 0 0;
+    font-size: 2em;
+  }
+  .brand-cel{
+    align-items: flex-start !important;  /*Pregunta profe (filter has property)*/
+    height: 100%;
+  }
+  .brand-cel a img{
+    height: 2em;
+    margin: 0 0 0 0;
+    padding: 0 0;
+  }
+
+  /*Main Section*/
+  .main{
+    /* padding-top: 4em; */
+    height: 35em;
+  }
+  .my-conf{
+    height: 100%;
+  }
+  .my-img1-cell{
+    height: 85%;
+  }
+  .conf{
+    width: 25em;
+    height: 50%;
+    top: 13%;
+  }
+  .cell-btn-text{
+    font-size: 1em;
+  }
+
+  /*Oradores section*/
+  .no-space{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1em;
+  }
+
+  .oradores-lg,
+  #oradores-lg{
+    display: none;
+  }
+  .oradores-sm,
+  #oradores-sm{
+    display:block;
+  }
+
+  .card-w{
+    width: 60%;
+  }
+  .c-f-s{
+    font-size: 1em;
+  }
+  .c-t-j{
+    text-align: justify;
+  }
+  .pos-400{
+    position: relative;
+  }
+  /*Place and date Section*/
+  .place-date{
+    height: 20em;
+  }
+
+  .hon-img{
+    background-size: contain;
+    max-height: 100%;
+    max-width: 100%;
+  }
+    footer{
+      background-color: #1e4f6d;
+    }
+    footer ul li{
+      list-style-type: none;
+    }
+    footer ul[class*="text-center"] li a{
+      text-decoration: none;
+    }
+
+    .carousel-cell{
+      width: 80%;
+      margin: auto;
+    }
+  
+}
+
+@media screen and (min-width:769px) and (max-width: 992px) {
+body{
+  font-size: 0.8em;
+}
+.my-text1 {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  margin-right: 2em;
+}
+  .oradores-sm,
+  #oradores-sm{
+    display:none;
+  }
+
+  footer{
+    height: 4em;
+    background-color: #1e4f6d;
+  }
+  footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+ 
+  footer ul li{
+    list-style-type: none;
+  }
+  footer ul li a{
+    text-decoration: none;
+  }
+}
+
+
+/* md 768 Bootstrap 5.3 */
+@media screen and (min-width: 993px) {
+  body {
+    font-size: 1em;
+  }
+  .my-text1 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    margin-right: 2em;
+  }
+  .hon-img{background-size: contain;
+    /* max-height: 100%; */
+    max-width: 100%;
+    margin-left: 0;
+  }
+  
+
+  .orador form{
+    width: 60%;
+    margin: auto;
+  }
+  footer{
+    height: 4em;
+    background-color: #1e4f6d;
+  }
+  footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+ 
+  footer ul li{
+    list-style-type: none;
+  }
+  footer ul li a{
+    text-decoration: none;
+  }
+  .oradores-sm{
+    display: none;
+  }
+}

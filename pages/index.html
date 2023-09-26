@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codo a Codo with Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg my-bg-grey text-white nav-cel">
+    <div class="brand-cel container-fluid align-content ps-0">
+      <a class="navbar-brand" href="#"><img class="codo-a-codo" src="../source/img/codoacodo.png" alt=""></a>
+      <h4 class="h4">Conf Bs As</h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" style="background-color: #383e42;" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#conferencia">La Conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white oradores-lg" href="#oradores-lg">Los oradores</a>
+            <a class="nav-link text-white oradores-sm" href="#oradores-sm">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#lugar-fecha">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#se-orador">Conviertete en orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Compra Tickets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="conferencia">
+    <div class="position-relative my-conf">
+      <img class="img-fluid my-img1 my-img1-cell" src="../source/img/ba1.jpg" alt="">
+      <div class="my-text1 col-12 col-sm-12">
+        <h3 class="my-text-align-right h3 text-white">Conf Bs As</h3>
+        <p class="my-text-align-right cell-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, natus
+          fugit
+          dolores mollitia sed enim qui ut
+          officiis accusantium expedita praesentium reiciendis deleniti maiores beatae cupiditate cum deserunt quasi
+          quam
+          ea atque iusto delectus exercitationem? Quibusdam voluptate sequi ut deserunt.
+        </p>
+        <div class="my-links-right d-grip gap-2">
+          <button type="button" class="btn btn-outline-secondary btn-sm text-white border border-white cell-btn-text">Quiero
+            ser
+            Orador</button>
+          <button type="button" class="btn btn-success btn-sm cell-btn-text">Comprar Tickets</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="oradores-lg" id="oradores-lg">
+    <div>
+      <p class="text-secondary text-center no-space">CONOCE A LOS</p>
+      <h4 class="text-secondary text-center no-space h4">ORADORES</h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card mx-auto text-dark bg-light mb-3 card-w">
+            <img src="../source/img/steve-1.jpg" class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+              <a class="btn btn-warning btn-sm c-f-s" href="">JavaScript</a>
+              <a class="btn btn-info btn-sm c-f-s" href="">React</a>
+              <h5 class="card-title pt-3">Steve Jobs</h5>
+              <p class="card-text text-dark c-t-j">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nesciunt?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card mx-auto text-dark bg-light mb-3 card-w">
+            <img src="../source/img/bill.jpg" class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+              <a class="btn btn-warning btn-sm c-f-s" href="">JavaScript</a>
+              <a class="btn btn-info btn-sm c-f-s" href="">React</a>
+              <h5 class="card-title pt-3">Bill Gates</h5>
+              <p class="card-text text-dark c-t-j">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nesciunt?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card mx-auto text-dark bg-light mb-3 card-w">
+            <img src="../source/img/ada.jpeg" class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+              <a class="btn btn-secondary btn-sm c-f-s" href="">Negocios</a>
+              <a class="btn btn-danger btn-sm c-f-s" href="">Startups</a>
+              <h5 class="card-title pt-3">Ada Lovelace</h5>
+              <p class="card-text text-dark c-t-j">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nesciunt?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="oradores-sm" id="oradores-sm">
+    <div>
+      <p class="text-secondary text-center no-space">CONOCE A LOS</p>
+      <h4 class="text-secondary text-center no-space h4">ORADORES</h4>
+    </div>
+    <!-- -Display Carousel on smal device only -->
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+      <div class="carousel-indicators pos-400">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner carousel-cell">
+        <div class="carousel-item active">
+          <div class="card mx-auto text-dark bg-light mb-3 card-w">
+            <img src="../source/img/steve.jpg" class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+              <a class="btn btn-warning btn-sm c-f-s" href="">JavaScript</a>
+              <a class="btn btn-info btn-sm c-f-s" href="">React</a>
+              <h5 class="card-title pt-3">Steve Jobs</h5>
+              <p class="card-text text-dark c-t-j">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nesciunt?</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card mx-auto text-dark bg-light mb-3 card-w">
+            <img src="../source/img/bill.jpg" class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+              <a class="btn btn-warning btn-sm c-f-s" href="">JavaScript</a>
+              <a class="btn btn-info btn-sm c-f-s" href="">React</a>
+              <h5 class="card-title pt-3">Bill Gates</h5>
+              <p class="card-text text-dark c-t-j">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nesciunt?</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card mx-auto text-dark bg-light mb-3 card-w">
+            <img src="../source/img/ada.jpeg" class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+              <a class="btn btn-secondary btn-sm c-f-s" href="">Negocios</a>
+              <a class="btn btn-danger btn-sm c-f-s" href="">Startups</a>
+              <h5 class="card-title pt-3">Ada Lovelace</h5>
+              <p class="card-text text-dark c-t-j">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nesciunt?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  </section>
+  <section class="place-time" id="lugar-fecha">
+    <div>
+      <p class="text-secondary text-center no-space">LUGAR Y FECHA</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row pt-2">
+        <div class="col-sm-4 col-md-6 ps-0 pe-0" style="display: flex;">
+          <img class="hon-img" src="../source/img/honolulu.jpg" alt="">
+        </div>
+        <div class="col-sm-8 col-md-6 my-bg-grey ps-2 pt-2 pe-0">
+          <h5 class="text-white">Bs As Octubre</h5>
+          <p class="ps-1">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad consolidada que cubre toda la ciudad (aproximadamente 600 Km<sup>2</sup> de superficie). </p>
+          <button class="btn btn-secondary btn-sm" style="background-color: #383e42;">Conoce más</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="orador" id="se-orador">
+    <p class="text-secondary text-center no-space">Convierte en un</p>
+    <h4 class="text-secondary text-center no-space h4">ORADOR</h4>
+    <p class="text-secondary text-center ps-2 pe-2">Anótate como un orador para dar una <a class="text-secondary">charla ignite</a>. Cuentanos de que quieres hablar!</p>
+    <form action="#">
+      <div class="container">
+        <div class="row gx-1 g-0 ml-0">
+          <div class="col-6">
+            <input class="form-control" type="text" placeholder="Nombre">
+          </div>
+          <div class="col-6">
+            <input class="form-control" type="text" placeholder="Apellido">
+          </div>
+          </div>
+        </div>
+        <div class="row pt-2 ms-0 me-0">
+          <div class="col-12">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar ?"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-2">
+        <button class="btn btn-success btn-sm d-grip gap-2 center">Enviar</button>
+      </div>
+    </form>
+  </section>
+  <footer>
+    <hr>
+    <ul class="text-center">
+      <li><a class="text-white">Preguntas Frecuentes</a></li>
+      <li><a class="text-white" href="">Contáctanos</a></li>
+      <li><a class="text-white" href="">Prensa</a></li>
+      <li><a class="text-white" href="">Conferencia</a></li>
+      <li><a class="text-white" href="">Terminos y Condiciones</a></li>
+      <li><a class="text-white" href="">Privacidad</a></li>
+      <li><a class="text-white" href="">Estudiantes</a></li>
+    </ul>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
