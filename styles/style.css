@@ -13,6 +13,12 @@ body {
   width: 60%;
   margin: auto;
 }
+.nav-cel{
+  height: 7em;
+}
+.hon-img{
+  width: 100%;
+}
 h3,
 p {
   color: white;
@@ -53,6 +59,7 @@ p {
   h3{
     font-size: inherit;
   }
+  
   .my-text1 {
     height: 18em;
     position: absolute;
