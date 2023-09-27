@@ -10,12 +10,10 @@ body {
   height: 100vh;
 }
 .orador form{
-  width: 70%;
+  width: 90%;
   margin: auto;
 }
-.nav-cel{
-  height: 7em;
-}
+
 .hon-img{
   width: 100%;
 }
@@ -24,7 +22,7 @@ p {
   color: white;
 }
 .codo-a-codo {
-  height: 4em;
+  height: 4rem;
 }
 .my-bg-grey {
   background-color: var(--cinza-color);
